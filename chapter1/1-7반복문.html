@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        // for(var i=1; i<=5; i++){
+        //     console.log(i)
+        // }
+
+        // //향상된 for문
+        // var array = [0,1,5]
+        // var i;
+
+        // //in은  index값이 찍힘
+        // for(i in array){
+        //     console.log(i)
+        // }
+
+        // //of는 값이 바로 찍힘
+        // for(i of array){
+        //     console.log(i)
+        // }
+
+        var person = {
+            personName: "길동",
+            lastName: "홍",
+            age: 18
+        }
+
+        
+        for(var i in person){
+            console.log(person[i])
+        }
+
+        var cars = ["현대", "기아", "볼보", "벤츠"]
+        for(var i of cars){
+            console.log(i)
+        }
+
+    </script>
+</body>
+</html>
