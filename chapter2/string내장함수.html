@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //length
+        var text = "아윤"
+        console.log(text.length)
+
+        //indexOf: 특정문자열의 위치
+        var str = "hello world"
+        console.log(str.indexOf("hello"))
+
+        //lastindexof: 오른쪽부터 시작
+        console.log(str.lastIndexOf("l"))
+
+        //slice
+        var str = "김지혜, 김가현, 연아윤"
+        console.log(str.slice(-13, -10))
+
+        //substring: 위치 (어디부터, 어디까지)
+        console.log(str.substring(4,8))
+
+        //substr: 글자수 (어디부터, 글자수 몇 개)
+        console.log(str.substr(4,4))
+        var ayun = "2007-09-06"
+        console.log(ayun.substring(0, ayun.indexOf("-")))
+        console.log(ayun.indexOf("-"))
+
+        //replace
+        var str1 = "please visit here here"
+        console.log(str1.replace("here", "there"))
+
+        //정규표현식
+        var str2 = "please visit hEre here"
+        console.log(str2.replace(/here/g, "there")) //g의 의미는 다 바꿔주겠다..
+        console.log(str2.replace(/here/gi, "there")) //gi는 대소문자 구분 안 하고 다 바꾸겠다.
+
+        //toUpperCase
+        console.log(str2.toUpperCase()) //대문자
+        //toLowerCase
+        console.log(str2.toLowerCase()) //소문자
+
+        //concat
+        var str4 = "강아지"
+        var str5 = "고양이"
+        console.log(str4.concat(str5)) //연결
+
+        //charAt
+        console.log(str2.charAt(1)) //문자하나를 찾아줌
+
+        //split
+        console.log(ayun.split("-")) //문자열인 ayun변수에서 -를 기준으로 쪼개면 배열로 담긴다
+        console.log(ayun) //원래 ayun에게는 영향 안 미치는 것 확인.
+
+        //toString
+        var num = 123456789
+        console.log(num.toString(2)) //()안에 진법 넣으면 바뀝니다앙 2진법, 16진법.. ㅡ등
+    </script>
+</body>
+</html>
